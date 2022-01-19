@@ -1,9 +1,15 @@
 :root {
-  --bacground-color: #ffffff;
+	--bacground-color: #ffffff;
+	--secondary-bacground-color: #f7f7f7;
+	--first-title-color: #ffffff;
+	--secondary-title-color: #303030;
+	--primary-text-color: #555555;
+	--accent-color: #ff6c00;
 }
 
 body {
-  background-color: var(--bacground-color);
+	font-family: 'Open Sans', sans-serif;
+	background-color: var(--bacground-color);
 }
 
 p,
@@ -13,9 +19,305 @@ h3,
 h4,
 h5,
 h6 {
-  padding: 0;
+	padding: 0;
+	margin: 0;
 }
 
 ul {
-  list-style: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+
+h1,
+h2 {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 700;
+}
+.container {
+	outline: 1px solid tomato;
+	display: flex;
+	box-sizing: border-box;
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+.pre-title {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: calc(15 / 11);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--secondary-title-color);
+}
+.section-title {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: calc(49 / 42);
+	letter-spacing: 0.05em;
+}
+.after-title {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: calc(30 / 18);
+
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color);
+}
+/* ---------- Header ---------- */
+
+.header {
+	background-color: rgb(240, 218, 164);
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.header-nav {
+	display: flex;
+}
+.logo {
+	outline: 1px solid tomato;
+}
+
+.header-list {
+	display: flex;
+	align-items: center;
+}
+
+.header-item {
+	margin-left: 40px;
+}
+.header-link {
+	color: var(--first-title-color);
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.1em;
+}
+.header-link:hover,
+.header-link:focus {
+	color: var(--accent-color);
+}
+
+.header-tel {
+	color: var(--first-title-color);
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.1em;
+	margin-top: 48px;
+}
+
+.header-btn {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.09em;
+	padding: 11px 20px;
+	border: 1px solid var(--accent-color);
+	border-radius: 25px;
+}
+/* ---------- Hero ---------- */
+.hero-section {
+	background-color: rgb(228, 224, 202);
+}
+.hero-pre-title {
+	margin-bottom: 20px;
+}
+
+.hero-title {
+	color: var(--first-title-color);
+	font-size: 72px;
+	line-height: calc(85 / 72);
+	letter-spacing: 0.05em;
+	margin-bottom: 20px;
+}
+
+.section-title {
+	font-size: 42px;
+	line-height: 49px;
+	letter-spacing: 0.05em;
+}
+
+/* ---------- О нас ---------- */
+
+.about {
+	background-color: rgb(200, 235, 200);
+	padding: 139px 0 121px 0;
+}
+.about-pre-tetle {
+	margin-bottom: 20px;
+}
+.about-title {
+	margin-bottom: 20px;
+}
+.about-after-title {
+	margin-bottom: 20px;
+}
+.about-text {
+	margin-bottom: 40px;
+}
+
+/* ---------- Цены ---------- */
+
+.prices {
+	background-color: rgb(241, 193, 241);
+	padding-top: 130px;
+	padding-bottom: 130px;
+}
+.prices-pre-title {
+	margin-bottom: 20px;
+}
+.prices-title {
+	color: var(--first-title-color);
+	margin-bottom: 44px;
+}
+
+/* ---------- Reasons ---------- */
+
+.reasons {
+	padding-top: 121px;
+	padding-bottom: 130px;
+}
+.reasons-count {
+	margin-bottom: 6px;
+}
+.reasons-pre-title {
+	margin-bottom: 20px;
+}
+.reasons-title {
+	margin-bottom: 20px;
+}
+/* ---------- Masters ---------- */
+
+.masters {
+	background-color: var(--secondary-bacground-color);
+	padding-top: 130px;
+	padding-bottom: 130px;
+}
+.masters-pre-title {
+	margin-bottom: 20px;
+}
+.masters-title {
+	margin-bottom: 44px;
+}
+.masters-item-content {
+	padding-top: 30px;
+}
+.master-item-title {
+	margin-bottom: 8px;
+}
+/* ---------- Gallery ---------- */
+
+.gallery {
+	background-color: rgb(247, 217, 154);
+	padding-top: 130px;
+	padding-bottom: 130px;
+}
+.gallery-pre-title {
+	margin-bottom: 44px;
+}
+
+/* ---------- Contacts ---------- */
+
+.contacts {
+	background-color: #191c26;
+	padding-top: 130px;
+	padding-bottom: 130px;
+	
+}
+.online-entry-title {
+	color: var(--first-title-color);
+}
+.contacts-title {
+	color: var(--first-title-color);
+}
+.contacts-link {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: calc(30 / 18);
+
+	letter-spacing: 0.02em;
+	color: #9da4bd;
+}
+.contacts-tel {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: calc(30 / 18);
+
+	letter-spacing: 0.02em;
+	color: #9da4bd;
+}
+.contacts-mail {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: calc(30 / 18);
+
+	letter-spacing: 0.02em;
+	text-decoration-line: underline;
+	color: #9da4bd;
+}
+.working-mode-text {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: calc(15 / 11);
+
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--first-title-color);
+}
+.working-mode {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: calc(30 / 18);
+
+	letter-spacing: 0.02em;
+	color: #9da4bd;
+}
+/* ---------- Footer ---------- */
